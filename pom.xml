@@ -4,4 +4,13 @@
   <artifactId>Telit-automation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <description>Automation assignment for Telit</description>
+  <dependencies>
+  <dependency>
+  <!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.49.0</version>
+    <scope>compile</scope>
+	</dependency>
+  </dependencies>
 </project>
