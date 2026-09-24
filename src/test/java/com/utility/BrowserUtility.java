@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.constants.Browser;
 
 public abstract class BrowserUtility {
 
@@ -25,6 +28,16 @@ public abstract class BrowserUtility {
 			driver = new EdgeDriver();
 		} else {
 			System.err.println("Invalid Browser... Select Chrome or Edge only");
+		}
+	}
+	
+	public BrowserUtility(Browser browserName) {
+		if (browserName==Browser.CHROME) {
+			driver = new ChromeDriver();
+		} else if (browserName==Browser.EDGE) {
+			driver = new EdgeDriver();
+		} else if (browserName==Browser.FIREFOX){
+			driver = new FirefoxDriver();
 		}
 	}
 
