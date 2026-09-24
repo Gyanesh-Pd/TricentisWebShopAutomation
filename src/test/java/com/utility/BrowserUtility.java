@@ -3,18 +3,29 @@ package com.utility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public abstract class BrowserUtility {
 
 	private WebDriver driver;
 
-	
 	public WebDriver getDriver() {
 		return driver;
 	}
 
 	public BrowserUtility(WebDriver driver) {
 		this.driver = driver;
+	}
+
+	public BrowserUtility(String browserName) {
+		if (browserName.equalsIgnoreCase("chrome")) {
+			driver = new ChromeDriver();
+		} else if (browserName.equalsIgnoreCase("edge")) {
+			driver = new EdgeDriver();
+		} else {
+			System.err.println("Invalid Browser... Select Chrome or Edge only");
+		}
 	}
 
 	public void gotoWebPage(String url) {
@@ -35,8 +46,7 @@ public abstract class BrowserUtility {
 		element.sendKeys(inputText);
 	}
 
-	public String getVisibleText(By locator)
-	{
+	public String getVisibleText(By locator) {
 		WebElement element = driver.findElement(locator);
 		return element.getText();
 	}
