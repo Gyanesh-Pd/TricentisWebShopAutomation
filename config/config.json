@@ -1,0 +1,13 @@
+{
+  "environments": {
+    "QA": {
+      "url": "https://demowebshop.tricentis.com/"
+    },
+    "DEV": {
+      "url": "https://demowebshop.tricentis.com/"
+    },
+    "UAT": {
+      "url": "https://demowebshop.tricentis.com/"
+    }
+  }
+}
