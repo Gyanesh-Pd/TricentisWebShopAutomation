@@ -1,31 +1,24 @@
- package com.ui.tests;
+package com.ui.tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import com.utility.BrowserUtility;
+import static com.constants.Browser.*;
+import static org.testng.Assert.*;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import com.ui.pages.HomePage;
 
 public class LoginTest {
 
-	public static void main(String[] args) {
-//		WebDriver wd = new ChromeDriver(); // Browser Session Created
-
-//		BrowserUtility browserUtility = new BrowserUtility(wd);
-//		browserUtility.gotoWebPage("https://demowebshop.tricentis.com/");
-//		browserUtility.maximizeWindow();
-//
-//		By logInLocator = By.xpath("//a[contains(text(),'Log in')]");
-//		browserUtility.clickOn(logInLocator);
-//
-//		By emailInputLocator = By.id("Email");
-//		browserUtility.enterText(emailInputLocator, "wakir22560@meonvr.com");
-//
-//		By passwordInputLocator = By.id("Password");
-//		browserUtility.enterText(passwordInputLocator, "Tempmail2026");
-//
-//		By loginButtonLocator = By.xpath("//input[@value='Log in']");
-//		browserUtility.clickOn(loginButtonLocator);
+	HomePage homePage;
+	
+	@BeforeMethod(description = "Loads HomePage before Test method execution")
+	public void setup() {
+		homePage = new HomePage(CHROME); // import static com.constants.Browser.* instead of Browser.CHROME
 	}
+
+	@Test(description = "Verify valid user log In", groups = { "sanity", "e2e" })
+	public void loginTest() {
+
+		assertEquals(homePage.gotoLogInPage().doLoginWith("wakir22560@meonvr.com", "Tempmail2026").getUserNameText(),
+				"wakir22560@meonvr.com");
+	}	
 }
