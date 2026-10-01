@@ -18,9 +18,17 @@ public class LoginTest {
 		homePage = new HomePage(CHROME); // import static com.constants.Browser.* instead of Browser.CHROME
 	}
 
-	@Test(description = "Verify valid User log In", groups = { "sanity", "e2e" }, 
+	@Test(description = "Verify valid User log In with JSON file", groups = { "sanity", "e2e" }, 
 			dataProviderClass=com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestDataProvider")
 	public void loginTest(User user) {
+
+		assertEquals(homePage.gotoLogInPage().doLoginWith(user.getEmailAddress(),user.getPassword()).getUserNameText(),
+				"wakir22560@meonvr.com");
+	}	
+	
+	@Test(description = "Verify valid User log In with CSV file", groups = { "sanity", "e2e" }, 
+			dataProviderClass=com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestCSVDataProvider")
+	public void loginCSVTest(User user) {
 
 		assertEquals(homePage.gotoLogInPage().doLoginWith(user.getEmailAddress(),user.getPassword()).getUserNameText(),
 				"wakir22560@meonvr.com");
