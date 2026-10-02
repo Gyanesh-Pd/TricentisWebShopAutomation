@@ -13,6 +13,7 @@ import com.google.gson.Gson;
 import com.ui.pojo.LoginData;
 import com.ui.pojo.User;
 import com.utility.CSVReaderUtility;
+import com.utility.ExcelReaderUtility;
 
 public class LoginDataProvider {
 
@@ -43,4 +44,12 @@ public class LoginDataProvider {
 	{
 		return CSVReaderUtility.readCSVFile("loginData.csv");
 	}
+	
+	@DataProvider (name="LoginTestExcelDataProvider")
+	public Iterator<User> loginExcelDataProvider()
+	{
+		return ExcelReaderUtility.readExcelFile("loginData.xlsx");
+	}
+	
+	
 }

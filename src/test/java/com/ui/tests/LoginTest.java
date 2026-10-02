@@ -20,7 +20,7 @@ public class LoginTest {
 
 	@Test(description = "Verify valid User log In with JSON file", groups = { "sanity", "e2e" }, 
 			dataProviderClass=com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestDataProvider")
-	public void loginTest(User user) {
+	public void loginJSONTest(User user) {
 
 		assertEquals(homePage.gotoLogInPage().doLoginWith(user.getEmailAddress(),user.getPassword()).getUserNameText(),
 				"wakir22560@meonvr.com");
@@ -33,4 +33,12 @@ public class LoginTest {
 		assertEquals(homePage.gotoLogInPage().doLoginWith(user.getEmailAddress(),user.getPassword()).getUserNameText(),
 				"wakir22560@meonvr.com");
 	}	
+	
+	@Test(description = "Verify valid User log In with Excel file", groups = { "sanity", "e2e" }, 
+			dataProviderClass=com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataProvider")
+	public void loginExcelTest(User user) {
+
+		assertEquals(homePage.gotoLogInPage().doLoginWith(user.getEmailAddress(),user.getPassword()).getUserNameText(),
+				"wakir22560@meonvr.com");
+	}
 }
