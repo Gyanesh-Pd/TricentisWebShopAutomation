@@ -19,14 +19,15 @@ public class LoginTest {
 	}
 
 	@Test(description = "Verify valid User log In with JSON file", groups = { "sanity", "e2e" }, 
-			dataProviderClass=com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestDataProvider")
+			dataProviderClass=com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestDataProvider",
+			retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
 	public void loginJSONTest(User user) {
 
 		assertEquals(homePage.gotoLogInPage().doLoginWith(user.getEmailAddress(),user.getPassword()).getUserNameText(),
 				"wakir22560@meonvr.com");
 	}	
 	
-	@Test(description = "Verify valid User log In with CSV file", groups = { "sanity", "e2e" }, 
+	@Test(enabled =true, description = "Verify valid User log In with CSV file", groups = { "sanity", "e2e" }, 
 			dataProviderClass=com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestCSVDataProvider")
 	public void loginCSVTest(User user) {
 
@@ -34,7 +35,7 @@ public class LoginTest {
 				"wakir22560@meonvr.com");
 	}	
 	
-	@Test(description = "Verify valid User log In with Excel file", groups = { "sanity", "e2e" }, 
+	@Test(enabled =true, description = "Verify valid User log In with Excel file", groups = { "sanity", "e2e" }, 
 			dataProviderClass=com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataProvider")
 	public void loginExcelTest(User user) {
 

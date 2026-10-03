@@ -11,7 +11,7 @@ import com.ui.pojo.Environment;
 
 public class JSONUtility {
 
-	public static String jsonReader(Env env) {
+	public static Environment jsonReader(Env env) {
 
 		Gson gson = new Gson();  //Using 3rd party lib to read json file
 		File jsonFile = new File(System.getProperty("user.dir") + File.separator + "config" + File.separator + "config.json");
@@ -25,6 +25,6 @@ public class JSONUtility {
 		
 		Config config = gson.fromJson(fileReader, Config.class);
 		Environment environment = config.getEnvironments().get(env.toString());
-		return environment.getUrl();
+		return environment;
 	}
 }

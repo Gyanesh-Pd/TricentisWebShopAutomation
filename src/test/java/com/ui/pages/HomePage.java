@@ -17,7 +17,7 @@ public final class HomePage extends BrowserUtility {
 	public HomePage(Browser browserName) {
 		super(browserName);		//To call the Parent Class constructor from Child Class Constructor
 		//gotoWebPage(PropertiesUtil.readProperties(QA, "URL"));  //Using properties file for reading properties
-		gotoWebPage(JSONUtility.jsonReader(QA));	//Using JSON file for reading properties
+		gotoWebPage(JSONUtility.jsonReader(QA).getUrl());	//Using JSON file for reading properties
 		maximizeWindow();
 	}
 	
