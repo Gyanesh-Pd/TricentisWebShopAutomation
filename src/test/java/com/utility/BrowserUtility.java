@@ -1,5 +1,6 @@
 package com.utility;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +13,7 @@ import com.constants.Browser;
 public abstract class BrowserUtility {
 
 	private WebDriver driver;
+	Logger logger = LoggerUtility.getLogger(this.getClass());
 
 	public WebDriver getDriver() {
 		return driver;
@@ -22,6 +24,7 @@ public abstract class BrowserUtility {
 	}
 
 	public BrowserUtility(String browserName) {
+		logger.info("Launching Browser " +browserName);
 		if (browserName.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 		} else if (browserName.equalsIgnoreCase("edge")) {
@@ -32,6 +35,7 @@ public abstract class BrowserUtility {
 	}
 	
 	public BrowserUtility(Browser browserName) {
+		logger.info("Launching Browser " +browserName);
 		if (browserName==Browser.CHROME) {
 			driver = new ChromeDriver();
 		} else if (browserName==Browser.EDGE) {
@@ -42,25 +46,34 @@ public abstract class BrowserUtility {
 	}
 
 	public void gotoWebPage(String url) {
+		logger.info("Going url " +url);
 		driver.get(url);
 	}
 
 	public void maximizeWindow() {
+		logger.info("Maximizing Window");
 		driver.manage().window().maximize();
 	}
 
 	public void clickOn(By locator) {
+		logger.info("Clicking on Locator " +locator);
 		WebElement element = driver.findElement(locator);
 		element.click();
 	}
 
 	public void enterText(By locator, String inputText) {
+		logger.info("Finding element with Locator "+locator);
 		WebElement element = driver.findElement(locator);
+		
+		logger.info("Entering Text in the element "+inputText);
 		element.sendKeys(inputText);
 	}
 
 	public String getVisibleText(By locator) {
+		logger.info("Finding element with Locator "+locator);
 		WebElement element = driver.findElement(locator);
+		
+		logger.info("Text from found element "+element.getText());
 		return element.getText();
 	}
 }

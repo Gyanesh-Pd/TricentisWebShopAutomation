@@ -1,0 +1,31 @@
+2026-10-06 23:07:26 [main] INFO com.ui.listeners.TestListener Test Suite Started 
+2026-10-06 23:07:36 [main] INFO com.ui.listeners.TestListener loginJSONTest 
+2026-10-06 23:07:36 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
+2026-10-06 23:07:36 [main] INFO com.ui.listeners.TestListener Groups:[sanity, e2e] 
+2026-10-06 23:07:38 [main] WARN com.ui.listeners.TestListener loginJSONTest SKIPPED 
+2026-10-06 23:07:43 [main] INFO com.ui.listeners.TestListener loginJSONTest 
+2026-10-06 23:07:43 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
+2026-10-06 23:07:43 [main] INFO com.ui.listeners.TestListener Groups:[sanity, e2e] 
+2026-10-06 23:07:45 [main] WARN com.ui.listeners.TestListener loginJSONTest SKIPPED 
+2026-10-06 23:08:14 [main] INFO com.ui.listeners.TestListener loginJSONTest 
+2026-10-06 23:08:14 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
+2026-10-06 23:08:14 [main] INFO com.ui.listeners.TestListener Groups:[sanity, e2e] 
+2026-10-06 23:08:16 [main] WARN com.ui.listeners.TestListener loginJSONTest SKIPPED 
+2026-10-06 23:08:22 [main] INFO com.ui.listeners.TestListener loginJSONTest 
+2026-10-06 23:08:22 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
+2026-10-06 23:08:22 [main] INFO com.ui.listeners.TestListener Groups:[sanity, e2e] 
+2026-10-06 23:08:25 [main] ERROR com.ui.listeners.TestListener loginJSONTest FAILED 
+2026-10-06 23:08:25 [main] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='header-links']//a[@class='account']"}
+  (Session info: chrome=154.0.8037.98)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a720de507197cf58b0bc4b87089a5401, findElement {value=//div[@class='header-links']//a[@class='account'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\GP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61759}, goog:processID: 13180, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61759/devtoo..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a720de507197cf58b0bc4b87089a5401 
+2026-10-06 23:09:00 [main] INFO com.ui.listeners.TestListener loginJSONTest 
+2026-10-06 23:09:01 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
+2026-10-06 23:09:01 [main] INFO com.ui.listeners.TestListener Groups:[sanity, e2e] 
+2026-10-06 23:09:03 [main] INFO com.ui.listeners.TestListener loginJSONTest PASSED 
+2026-10-06 23:09:03 [main] INFO com.ui.listeners.TestListener Test Suite Completed 
