@@ -17,7 +17,7 @@ public class TestBase {
 	@BeforeMethod(description = "Loads HomePage before Test method execution")
 	public void setup() {
 		logger.info("Loading HomePage of Application");
-		homePage = new HomePage(EDGE); // import static com.constants.Browser.* instead of Browser.CHROME
+		homePage = new HomePage(EDGE,true); // import static com.constants.Browser.* instead of Browser.CHROME
 	}
 	
 	public BrowserUtility getInstance()

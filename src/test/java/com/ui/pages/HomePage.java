@@ -14,8 +14,8 @@ public final class HomePage extends BrowserUtility {
 	private static final By LOG_IN_LINK_LOCATOR = By.xpath("//a[contains(text(),'Log in')]");
 	
 	//Constructor ------------>
-	public HomePage(Browser browserName) {
-		super(browserName);		//To call the Parent Class constructor from Child Class Constructor
+	public HomePage(Browser browserName, boolean isheadless) {
+		super(browserName, isheadless);		//To call the Parent Class constructor from Child Class Constructor
 		//gotoWebPage(PropertiesUtil.readProperties(QA, "URL"));  //Using properties file for reading properties
 		gotoWebPage(JSONUtility.jsonReader(QA).getUrl());	//Using JSON file for reading properties
 		maximizeWindow();
