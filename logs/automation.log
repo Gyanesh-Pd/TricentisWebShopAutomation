@@ -1,173 +1,146 @@
-2026-10-10 00:05:56 [main] INFO com.ui.listeners.TestListener Test Suite Started 
-2026-10-10 00:05:57 [main] INFO com.ui.tests.LoginTest Loading HomePage of Application 
-2026-10-10 00:05:57 [main] INFO com.ui.pages.HomePage Launching Browser EDGE 
-2026-10-10 00:06:11 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
-2026-10-10 00:06:14 [main] INFO com.ui.pages.HomePage Maximizing Window 
-2026-10-10 00:06:14 [main] INFO com.ui.listeners.TestListener loginCSVTest 
-2026-10-10 00:06:14 [main] INFO com.ui.listeners.TestListener Verify valid User log In with CSV file 
-2026-10-10 00:06:14 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
-2026-10-10 00:06:14 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
-2026-10-10 00:06:15 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
-2026-10-10 00:06:15 [main] INFO com.ui.pages.LoginPage Entering Text in the element testingCSV@gmail.com 
-2026-10-10 00:06:15 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
-2026-10-10 00:06:15 [main] INFO com.ui.pages.LoginPage Entering Text in the element passwordText 
-2026-10-10 00:06:15 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
-2026-10-10 00:06:16 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
-2026-10-10 00:06:16 [main] ERROR com.ui.listeners.TestListener loginCSVTest 
-2026-10-10 00:06:16 [main] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='header-links']//a[@class='account']"}
-  (Session info: MicrosoftEdge=155.0.4283.45)
+2026-10-12 23:47:58 [main] INFO com.ui.listeners.TestListener Test Suite Started 
+2026-10-12 23:48:15 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
+2026-10-12 23:48:18 [main] INFO com.ui.listeners.TestListener loginCSVTest 
+2026-10-12 23:48:18 [main] INFO com.ui.listeners.TestListener Verify valid User log In with CSV file 
+2026-10-12 23:48:18 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
+2026-10-12 23:48:18 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
+2026-10-12 23:48:19 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
+2026-10-12 23:48:19 [main] INFO com.ui.pages.LoginPage Entering Text in the element testingCSV@gmail.com 
+2026-10-12 23:48:19 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
+2026-10-12 23:48:19 [main] INFO com.ui.pages.LoginPage Entering Text in the element passwordText 
+2026-10-12 23:48:20 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
+2026-10-12 23:48:20 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
+2026-10-12 23:48:20 [main] ERROR com.ui.listeners.TestListener loginCSVTest 
+2026-10-12 23:48:20 [main] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='header-links']//a[@class='account']"}
+  (Session info: chrome=154.0.8037.58)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.3'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d6bc23e3a08ac229b1d1ca541a35a0e5, findElement {value=//div[@class='header-links']//a[@class='account'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 155.0.4283.45, fedcm:accounts: true, goog:processID: 11432, ms:edgeOptions: {debuggerAddress: localhost:50237}, msedge: {msedgedriverVersion: 155.0.4283.45 (50f24ef2aa53..., userDataDir: C:\Users\GP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50237/devtoo..., se:cdpVersion: 155.0.4283.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d6bc23e3a08ac229b1d1ca541a35a0e5 
-2026-10-10 00:06:16 [main] ERROR com.ui.listeners.TestListener Capturing ScreenShot of Failed Test 
-2026-10-10 00:06:16 [main] ERROR com.ui.listeners.TestListener Attaching screenshot to HTML Report 
-2026-10-10 00:06:16 [main] INFO com.ui.tests.LoginTest Loading HomePage of Application 
-2026-10-10 00:06:16 [main] INFO com.ui.pages.HomePage Launching Browser EDGE 
-2026-10-10 00:06:18 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
-2026-10-10 00:06:21 [main] INFO com.ui.pages.HomePage Maximizing Window 
-2026-10-10 00:06:21 [main] INFO com.ui.listeners.TestListener loginCSVTest 
-2026-10-10 00:06:21 [main] INFO com.ui.listeners.TestListener Verify valid User log In with CSV file 
-2026-10-10 00:06:21 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
-2026-10-10 00:06:21 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
-2026-10-10 00:06:22 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
-2026-10-10 00:06:22 [main] INFO com.ui.pages.LoginPage Entering Text in the element wakir22560@meonvr.com 
-2026-10-10 00:06:22 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
-2026-10-10 00:06:22 [main] INFO com.ui.pages.LoginPage Entering Text in the element Tempmail2026 
-2026-10-10 00:06:23 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
-2026-10-10 00:06:24 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
-2026-10-10 00:06:24 [main] INFO com.ui.pages.WelcomePage Text from found element wakir22560@meonvr.com 
-2026-10-10 00:06:24 [main] INFO com.ui.listeners.TestListener loginCSVTest 
-2026-10-10 00:06:26 [main] INFO com.ui.tests.LoginTest Loading HomePage of Application 
-2026-10-10 00:06:26 [main] INFO com.ui.pages.HomePage Launching Browser EDGE 
-2026-10-10 00:06:29 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
-2026-10-10 00:06:43 [main] INFO com.ui.pages.HomePage Maximizing Window 
-2026-10-10 00:06:43 [main] INFO com.ui.listeners.TestListener loginExcelTest 
-2026-10-10 00:06:43 [main] INFO com.ui.listeners.TestListener Verify valid User log In with Excel file 
-2026-10-10 00:06:43 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
-2026-10-10 00:06:43 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
-2026-10-10 00:06:44 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
-2026-10-10 00:06:44 [main] INFO com.ui.pages.LoginPage Entering Text in the element testingExcel@gmail.com 
-2026-10-10 00:06:44 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
-2026-10-10 00:06:44 [main] INFO com.ui.pages.LoginPage Entering Text in the element passwordText 
-2026-10-10 00:06:44 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
-2026-10-10 00:06:45 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
-2026-10-10 00:06:45 [main] ERROR com.ui.listeners.TestListener loginExcelTest 
-2026-10-10 00:06:45 [main] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='header-links']//a[@class='account']"}
-  (Session info: MicrosoftEdge=155.0.4283.45)
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ea057acd2661732a934015955416c692, findElement {value=//div[@class='header-links']//a[@class='account'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.58, chrome: {chromedriverVersion: 154.0.8037.58 (a65484142591..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, goog:processID: 3052, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: wss://cdp-mumbai.lambdatest..., se:cdpVersion: 154.0.8037.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ea057acd2661732a934015955416c692 
+2026-10-12 23:48:20 [main] ERROR com.ui.listeners.TestListener Capturing ScreenShot of Failed Test 
+2026-10-12 23:48:21 [main] ERROR com.ui.listeners.TestListener Attaching screenshot to HTML Report 
+2026-10-12 23:48:33 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
+2026-10-12 23:48:36 [main] INFO com.ui.listeners.TestListener loginCSVTest 
+2026-10-12 23:48:36 [main] INFO com.ui.listeners.TestListener Verify valid User log In with CSV file 
+2026-10-12 23:48:36 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
+2026-10-12 23:48:36 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
+2026-10-12 23:48:37 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
+2026-10-12 23:48:37 [main] INFO com.ui.pages.LoginPage Entering Text in the element wakir22560@meonvr.com 
+2026-10-12 23:48:37 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
+2026-10-12 23:48:37 [main] INFO com.ui.pages.LoginPage Entering Text in the element Tempmail2026 
+2026-10-12 23:48:37 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
+2026-10-12 23:48:38 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
+2026-10-12 23:48:39 [main] INFO com.ui.pages.WelcomePage Text from found element wakir22560@meonvr.com 
+2026-10-12 23:48:39 [main] INFO com.ui.listeners.TestListener loginCSVTest 
+2026-10-12 23:48:52 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
+2026-10-12 23:48:55 [main] INFO com.ui.listeners.TestListener loginExcelTest 
+2026-10-12 23:48:55 [main] INFO com.ui.listeners.TestListener Verify valid User log In with Excel file 
+2026-10-12 23:48:55 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
+2026-10-12 23:48:55 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
+2026-10-12 23:48:55 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
+2026-10-12 23:48:56 [main] INFO com.ui.pages.LoginPage Entering Text in the element testingExcel@gmail.com 
+2026-10-12 23:48:56 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
+2026-10-12 23:48:56 [main] INFO com.ui.pages.LoginPage Entering Text in the element passwordText 
+2026-10-12 23:48:56 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
+2026-10-12 23:48:57 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
+2026-10-12 23:48:57 [main] ERROR com.ui.listeners.TestListener loginExcelTest 
+2026-10-12 23:48:57 [main] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='header-links']//a[@class='account']"}
+  (Session info: chrome=154.0.8037.58)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.3'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [4a4ba501cd8f325975278ad691d6214b, findElement {value=//div[@class='header-links']//a[@class='account'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 155.0.4283.45, fedcm:accounts: true, goog:processID: 13064, ms:edgeOptions: {debuggerAddress: localhost:57727}, msedge: {msedgedriverVersion: 155.0.4283.45 (50f24ef2aa53..., userDataDir: C:\Users\GP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57727/devtoo..., se:cdpVersion: 155.0.4283.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a4ba501cd8f325975278ad691d6214b 
-2026-10-10 00:06:45 [main] ERROR com.ui.listeners.TestListener Capturing ScreenShot of Failed Test 
-2026-10-10 00:06:45 [main] ERROR com.ui.listeners.TestListener Attaching screenshot to HTML Report 
-2026-10-10 00:06:45 [main] INFO com.ui.tests.LoginTest Loading HomePage of Application 
-2026-10-10 00:06:45 [main] INFO com.ui.pages.HomePage Launching Browser EDGE 
-2026-10-10 00:06:47 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
-2026-10-10 00:06:59 [main] INFO com.ui.pages.HomePage Maximizing Window 
-2026-10-10 00:06:59 [main] INFO com.ui.listeners.TestListener loginExcelTest 
-2026-10-10 00:06:59 [main] INFO com.ui.listeners.TestListener Verify valid User log In with Excel file 
-2026-10-10 00:06:59 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
-2026-10-10 00:06:59 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
-2026-10-10 00:07:00 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
-2026-10-10 00:07:00 [main] INFO com.ui.pages.LoginPage Entering Text in the element wakir22560@meonvr.com 
-2026-10-10 00:07:01 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
-2026-10-10 00:07:01 [main] INFO com.ui.pages.LoginPage Entering Text in the element Tempmail2026 
-2026-10-10 00:07:01 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
-2026-10-10 00:07:02 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
-2026-10-10 00:07:02 [main] INFO com.ui.pages.WelcomePage Text from found element wakir22560@meonvr.com 
-2026-10-10 00:07:02 [main] INFO com.ui.listeners.TestListener loginExcelTest 
-2026-10-10 00:07:02 [main] INFO com.ui.tests.LoginTest Loading HomePage of Application 
-2026-10-10 00:07:02 [main] INFO com.ui.pages.HomePage Launching Browser EDGE 
-2026-10-10 00:07:05 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
-2026-10-10 00:07:09 [main] INFO com.ui.pages.HomePage Maximizing Window 
-2026-10-10 00:07:09 [main] INFO com.ui.listeners.TestListener loginJSONTest 
-2026-10-10 00:07:09 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
-2026-10-10 00:07:09 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
-2026-10-10 00:07:09 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
-2026-10-10 00:07:11 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
-2026-10-10 00:07:11 [main] INFO com.ui.pages.LoginPage Entering Text in the element testingJSON@gmail.com 
-2026-10-10 00:07:11 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
-2026-10-10 00:07:11 [main] INFO com.ui.pages.LoginPage Entering Text in the element passwordText 
-2026-10-10 00:07:12 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
-2026-10-10 00:07:13 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
-2026-10-10 00:07:13 [main] WARN com.ui.listeners.TestListener loginJSONTest 
-2026-10-10 00:07:13 [main] INFO com.ui.tests.LoginTest Loading HomePage of Application 
-2026-10-10 00:07:13 [main] INFO com.ui.pages.HomePage Launching Browser EDGE 
-2026-10-10 00:07:16 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
-2026-10-10 00:07:20 [main] INFO com.ui.pages.HomePage Maximizing Window 
-2026-10-10 00:07:20 [main] INFO com.ui.listeners.TestListener loginJSONTest 
-2026-10-10 00:07:20 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
-2026-10-10 00:07:20 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
-2026-10-10 00:07:20 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
-2026-10-10 00:07:20 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
-2026-10-10 00:07:21 [main] INFO com.ui.pages.LoginPage Entering Text in the element testingJSON@gmail.com 
-2026-10-10 00:07:21 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
-2026-10-10 00:07:21 [main] INFO com.ui.pages.LoginPage Entering Text in the element passwordText 
-2026-10-10 00:07:21 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
-2026-10-10 00:07:22 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
-2026-10-10 00:07:22 [main] WARN com.ui.listeners.TestListener loginJSONTest 
-2026-10-10 00:07:22 [main] INFO com.ui.tests.LoginTest Loading HomePage of Application 
-2026-10-10 00:07:22 [main] INFO com.ui.pages.HomePage Launching Browser EDGE 
-2026-10-10 00:07:26 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
-2026-10-10 00:07:30 [main] INFO com.ui.pages.HomePage Maximizing Window 
-2026-10-10 00:07:31 [main] INFO com.ui.listeners.TestListener loginJSONTest 
-2026-10-10 00:07:31 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
-2026-10-10 00:07:31 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
-2026-10-10 00:07:31 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
-2026-10-10 00:07:32 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
-2026-10-10 00:07:32 [main] INFO com.ui.pages.LoginPage Entering Text in the element testingJSON@gmail.com 
-2026-10-10 00:07:32 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
-2026-10-10 00:07:32 [main] INFO com.ui.pages.LoginPage Entering Text in the element passwordText 
-2026-10-10 00:07:32 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
-2026-10-10 00:07:33 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
-2026-10-10 00:07:34 [main] WARN com.ui.listeners.TestListener loginJSONTest 
-2026-10-10 00:07:34 [main] INFO com.ui.tests.LoginTest Loading HomePage of Application 
-2026-10-10 00:07:34 [main] INFO com.ui.pages.HomePage Launching Browser EDGE 
-2026-10-10 00:07:38 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
-2026-10-10 00:07:41 [main] INFO com.ui.pages.HomePage Maximizing Window 
-2026-10-10 00:07:41 [main] INFO com.ui.listeners.TestListener loginJSONTest 
-2026-10-10 00:07:41 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
-2026-10-10 00:07:41 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
-2026-10-10 00:07:41 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
-2026-10-10 00:07:42 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
-2026-10-10 00:07:42 [main] INFO com.ui.pages.LoginPage Entering Text in the element testingJSON@gmail.com 
-2026-10-10 00:07:43 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
-2026-10-10 00:07:43 [main] INFO com.ui.pages.LoginPage Entering Text in the element passwordText 
-2026-10-10 00:07:43 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
-2026-10-10 00:07:44 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
-2026-10-10 00:07:44 [main] ERROR com.ui.listeners.TestListener loginJSONTest 
-2026-10-10 00:07:44 [main] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='header-links']//a[@class='account']"}
-  (Session info: MicrosoftEdge=155.0.4283.45)
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [cccd8d216ac6e34788e80b70b0c81d0f, findElement {value=//div[@class='header-links']//a[@class='account'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.58, chrome: {chromedriverVersion: 154.0.8037.58 (a65484142591..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, goog:processID: 1728, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: wss://cdp-mumbai.lambdatest..., se:cdpVersion: 154.0.8037.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cccd8d216ac6e34788e80b70b0c81d0f 
+2026-10-12 23:48:57 [main] ERROR com.ui.listeners.TestListener Capturing ScreenShot of Failed Test 
+2026-10-12 23:48:57 [main] ERROR com.ui.listeners.TestListener Attaching screenshot to HTML Report 
+2026-10-12 23:49:11 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
+2026-10-12 23:49:13 [main] INFO com.ui.listeners.TestListener loginExcelTest 
+2026-10-12 23:49:13 [main] INFO com.ui.listeners.TestListener Verify valid User log In with Excel file 
+2026-10-12 23:49:13 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
+2026-10-12 23:49:13 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
+2026-10-12 23:49:14 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
+2026-10-12 23:49:14 [main] INFO com.ui.pages.LoginPage Entering Text in the element wakir22560@meonvr.com 
+2026-10-12 23:49:14 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
+2026-10-12 23:49:14 [main] INFO com.ui.pages.LoginPage Entering Text in the element Tempmail2026 
+2026-10-12 23:49:15 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
+2026-10-12 23:49:16 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
+2026-10-12 23:49:16 [main] INFO com.ui.pages.WelcomePage Text from found element wakir22560@meonvr.com 
+2026-10-12 23:49:16 [main] INFO com.ui.listeners.TestListener loginExcelTest 
+2026-10-12 23:49:28 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
+2026-10-12 23:49:30 [main] INFO com.ui.listeners.TestListener loginJSONTest 
+2026-10-12 23:49:30 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
+2026-10-12 23:49:30 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
+2026-10-12 23:49:30 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
+2026-10-12 23:49:31 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
+2026-10-12 23:49:31 [main] INFO com.ui.pages.LoginPage Entering Text in the element testingJSON@gmail.com 
+2026-10-12 23:49:32 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
+2026-10-12 23:49:32 [main] INFO com.ui.pages.LoginPage Entering Text in the element passwordText 
+2026-10-12 23:49:32 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
+2026-10-12 23:49:33 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
+2026-10-12 23:49:33 [main] WARN com.ui.listeners.TestListener loginJSONTest 
+2026-10-12 23:49:44 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
+2026-10-12 23:49:47 [main] INFO com.ui.listeners.TestListener loginJSONTest 
+2026-10-12 23:49:47 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
+2026-10-12 23:49:47 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
+2026-10-12 23:49:47 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
+2026-10-12 23:49:48 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
+2026-10-12 23:49:48 [main] INFO com.ui.pages.LoginPage Entering Text in the element testingJSON@gmail.com 
+2026-10-12 23:49:48 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
+2026-10-12 23:49:48 [main] INFO com.ui.pages.LoginPage Entering Text in the element passwordText 
+2026-10-12 23:49:48 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
+2026-10-12 23:49:49 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
+2026-10-12 23:49:49 [main] WARN com.ui.listeners.TestListener loginJSONTest 
+2026-10-12 23:50:04 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
+2026-10-12 23:50:06 [main] INFO com.ui.listeners.TestListener loginJSONTest 
+2026-10-12 23:50:06 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
+2026-10-12 23:50:06 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
+2026-10-12 23:50:06 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
+2026-10-12 23:50:07 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
+2026-10-12 23:50:07 [main] INFO com.ui.pages.LoginPage Entering Text in the element testingJSON@gmail.com 
+2026-10-12 23:50:08 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
+2026-10-12 23:50:08 [main] INFO com.ui.pages.LoginPage Entering Text in the element passwordText 
+2026-10-12 23:50:08 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
+2026-10-12 23:50:09 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
+2026-10-12 23:50:09 [main] WARN com.ui.listeners.TestListener loginJSONTest 
+2026-10-12 23:50:20 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
+2026-10-12 23:50:23 [main] INFO com.ui.listeners.TestListener loginJSONTest 
+2026-10-12 23:50:23 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
+2026-10-12 23:50:23 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
+2026-10-12 23:50:23 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
+2026-10-12 23:50:24 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
+2026-10-12 23:50:24 [main] INFO com.ui.pages.LoginPage Entering Text in the element testingJSON@gmail.com 
+2026-10-12 23:50:24 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
+2026-10-12 23:50:24 [main] INFO com.ui.pages.LoginPage Entering Text in the element passwordText 
+2026-10-12 23:50:24 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
+2026-10-12 23:50:25 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
+2026-10-12 23:50:25 [main] ERROR com.ui.listeners.TestListener loginJSONTest 
+2026-10-12 23:50:25 [main] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='header-links']//a[@class='account']"}
+  (Session info: chrome=154.0.8037.58)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.3'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [8a378786e76fbe6f337998ae84f5cddd, findElement {value=//div[@class='header-links']//a[@class='account'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 155.0.4283.45, fedcm:accounts: true, goog:processID: 15020, ms:edgeOptions: {debuggerAddress: localhost:55349}, msedge: {msedgedriverVersion: 155.0.4283.45 (50f24ef2aa53..., userDataDir: C:\Users\GP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55349/devtoo..., se:cdpVersion: 155.0.4283.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8a378786e76fbe6f337998ae84f5cddd 
-2026-10-10 00:07:44 [main] ERROR com.ui.listeners.TestListener Capturing ScreenShot of Failed Test 
-2026-10-10 00:07:44 [main] ERROR com.ui.listeners.TestListener Attaching screenshot to HTML Report 
-2026-10-10 00:07:44 [main] INFO com.ui.tests.LoginTest Loading HomePage of Application 
-2026-10-10 00:07:44 [main] INFO com.ui.pages.HomePage Launching Browser EDGE 
-2026-10-10 00:07:49 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
-2026-10-10 00:07:53 [main] INFO com.ui.pages.HomePage Maximizing Window 
-2026-10-10 00:07:54 [main] INFO com.ui.listeners.TestListener loginJSONTest 
-2026-10-10 00:07:54 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
-2026-10-10 00:07:54 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
-2026-10-10 00:07:54 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
-2026-10-10 00:07:54 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
-2026-10-10 00:07:55 [main] INFO com.ui.pages.LoginPage Entering Text in the element wakir22560@meonvr.com 
-2026-10-10 00:07:55 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
-2026-10-10 00:07:55 [main] INFO com.ui.pages.LoginPage Entering Text in the element Tempmail2026 
-2026-10-10 00:07:55 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
-2026-10-10 00:07:56 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
-2026-10-10 00:07:57 [main] INFO com.ui.pages.WelcomePage Text from found element wakir22560@meonvr.com 
-2026-10-10 00:07:57 [main] INFO com.ui.listeners.TestListener loginJSONTest 
-2026-10-10 00:07:57 [main] INFO com.ui.listeners.TestListener Test Suite Completed 
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [e9d42c0619ac9c83d194476c0ec47278, findElement {value=//div[@class='header-links']//a[@class='account'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.58, chrome: {chromedriverVersion: 154.0.8037.58 (a65484142591..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, goog:processID: 4904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: wss://cdp-mumbai.lambdatest..., se:cdpVersion: 154.0.8037.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e9d42c0619ac9c83d194476c0ec47278 
+2026-10-12 23:50:25 [main] ERROR com.ui.listeners.TestListener Capturing ScreenShot of Failed Test 
+2026-10-12 23:50:25 [main] ERROR com.ui.listeners.TestListener Attaching screenshot to HTML Report 
+2026-10-12 23:50:43 [main] INFO com.ui.pages.HomePage Visiting url https://demowebshop.tricentis.com/ 
+2026-10-12 23:50:46 [main] INFO com.ui.listeners.TestListener loginJSONTest 
+2026-10-12 23:50:46 [main] INFO com.ui.listeners.TestListener Verify valid User log In with JSON file 
+2026-10-12 23:50:46 [main] INFO com.ui.listeners.TestListener Groups: [sanity, e2e] 
+2026-10-12 23:50:46 [main] INFO com.ui.pages.HomePage Clicking on Locator By.xpath: //a[contains(text(),'Log in')] 
+2026-10-12 23:50:47 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Email 
+2026-10-12 23:50:47 [main] INFO com.ui.pages.LoginPage Entering Text in the element wakir22560@meonvr.com 
+2026-10-12 23:50:47 [main] INFO com.ui.pages.LoginPage Finding element with Locator By.id: Password 
+2026-10-12 23:50:47 [main] INFO com.ui.pages.LoginPage Entering Text in the element Tempmail2026 
+2026-10-12 23:50:47 [main] INFO com.ui.pages.LoginPage Clicking on Locator By.xpath: //input[@value='Log in'] 
+2026-10-12 23:50:49 [main] INFO com.ui.pages.WelcomePage Finding element with Locator By.xpath: //div[@class='header-links']//a[@class='account'] 
+2026-10-12 23:50:49 [main] INFO com.ui.pages.WelcomePage Text from found element wakir22560@meonvr.com 
+2026-10-12 23:50:49 [main] INFO com.ui.listeners.TestListener loginJSONTest 
+2026-10-12 23:50:50 [main] INFO com.ui.listeners.TestListener Test Suite Completed 
