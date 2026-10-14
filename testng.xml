@@ -3,12 +3,14 @@
 <suite name="Tricentis WebApp Automation" parallel="methods" thread-count="5"
 	verbose="1">
 	<test name="Ui Automation Test">
-		<parameter name="browserName" value="edge" />
-		<parameter name="isLambdaTest" value="false" />
-		<parameter name="isHeadless" value="true" />
-		
+
+		<parameter name="browserName" value="${browser}" />
+		<parameter name="isLambdaTest" value="${isLambdaTest}" />
+		<parameter name="isHeadless" value="${isHeadless}" />
+
 		<classes>
 			<class name="com.ui.tests.LoginTest" />
 		</classes>
+
 	</test>
 </suite>

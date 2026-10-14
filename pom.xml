@@ -6,6 +6,25 @@
 	<artifactId>Telit-automation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<description>Automation assignment for Telit</description>
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.6.0</version>
+				<configuration>
+					<systemPropertyVariables>
+						<browser>${browser}</browser>
+						<isLambdaTest>${isLambdaTest}</isLambdaTest>
+						<isHeadless>${isHeadless}</isHeadless>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
 	<dependencies>
 
 		<dependency>
