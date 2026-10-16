@@ -23,7 +23,7 @@ public class TestBase {
 	@BeforeMethod(description = "Loads HomePage before Test method execution")
 	
 	public void setup(
-			@Optional("edge") String browserName,
+			@Optional("chrome") String browserName,
 			@Optional("false") boolean isLambdaTest,
 			@Optional("true") boolean isHeadless,
 			ITestResult result) {
